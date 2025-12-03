@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skripsi Tentang Uranium</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f4f4f9;
+      font-family: "Poppins", sans-serif;
+      padding: 20px;
+    }
+
+    /* Navbar */
+    .navbar-custom {
+      background-color: #198754;
+    }
+
+    .navbar-custom .navbar-brand, 
+    .navbar-custom .nav-link {
+      color: white !important;
+      font-weight: 500;
+    }
+
+    .navbar-custom .nav-link:hover {
+      color: #d1f0da !important;
+    }
+
+    /* Judul Utama */
+    .judul {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 40px;
+      font-weight: bold;
+      font-size: 2rem;
+      color: #2b2b2b;
+    }
+
+    /* Kotak Tiap Bab */
+    .col-box {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
+      margin-bottom: 25px;
+    }
+
+    .col-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .col-box img {
+      width: 100%;
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .long-text {
+      display: none;
+      text-align: justify;
+      margin-top: 15px;
+      color: #333;
+    }
+
+    /* Tombol Hijau */
+    .btn-uranium {
+      background-color: #198754;
+      color: white;
+      border-radius: 8px;
+      border: none;
+      padding: 10px 20px;
+      transition: 0.3s;
+    }
+
+    .btn-uranium:hover {
+      background-color: #146c43;
+    }
+
+    /* Tombol Info Kiri Atas */
+    .info-btn {
+      position: fixed;
+      top: 80px;
+      left: 20px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Skripsi Uranium</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon bg-light rounded-2"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#bab1">Bab 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bab2">Bab 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bab3">Bab 3</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bab4">Bab 4</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bab5">DAFTAR PUSTAKA</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tombol Info -->
+  <button class="btn btn-info info-btn" data-bs-toggle="modal" data-bs-target="#infoModal">Info Uranium</button>
+
+  <!-- Modal Info -->
+  <div class="modal fade" id="infoModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Berita Tentang Uranium</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            <h2> RI Punya Harta Karun Pembuat Nuklir di Kalimantan </h2>
+            Indonesia ternyata memiliki sumber daya mineral penting yang dapat digunakan dalam industri nuklir, yaitu thorium dan uranium.
+Sumber mineral ini ditemukan di Kalimantan, terutama dalam endapan mineral tertentu.
+Mineral tersebut merupakan bahan baku penting untuk pembangkit listrik tenaga nuklir (PLTN) atau teknologi nuklir masa depan.
+Ada potensi besar bila Indonesia mengembangkan industri nuklir berbasis mineral tersebut karena:
+Meningkatkan ketahanan energi,
+Mengurangi ketergantungan pada energi fosil,
+Meningkatkan nilai ekonomi mineral nasional.
+Namun, pembangunan fasilitas atau industri nuklir membutuhkan:
+Kebijakan pemerintah yang jelas,
+Teknologi dan keamanan tingkat tinggi,
+Regulasi dan pengawasan ketat.
+Badan Tenaga Nuklir Nasional (BATAN) dan lembaga terkait lainnya terus melakukan penelitian dan pemetaan potensi mineral ini.
+<a href="https://www.cnbcindonesia.com/news/20250622152707-4-642914/ri-punya-harta-karun-pembuat-nuklir-di-kalimantan/amp" class="mylink">Klik di sini</a>
+          </p>
+          <p>
+            <h2> Belum Ada Bukti Kerja Sama Nuklir Indonesia dan Rusia di Melawi</h2>
+            Tempo melakukan pemeriksaan fakta terhadap sebuah klaim yang beredar di media sosial yang menyatakan bahwa Indonesia dan Rusia sedang melakukan kerja sama pembangunan fasilitas nuklir di Melawi, Kalimantan Barat.tidak menemukan bukti adanya kerja sama nuklir antara Indonesia dan Rusia yang dilakukan di Kabupaten Melawi.
+Informasi yang beredar berasal dari posting media sosial yang tidak memiliki dasar resmi.
+Pemerintah daerah Melawi menyatakan tidak pernah ada komunikasi atau rencana proyek terkait pembangunan reaktor nuklir, fasilitas nuklir, ataupun penelitian nuklir bersama Rusia.
+Tidak ada dokumen resmi, pernyataan pemerintah, ataupun kesepakatan bilateral yang menyebut kerja sama tersebut.
+Tempo menyimpulkan bahwa klaim tersebut adalah menyesatkan / tidak benar.
+<a href="https://cekfakta.tempo.co/fakta/3912/belum-ada-bukti-kerja-sama-nuklir-indonesia-dan-rusia-di-melawi" class="mylink">Klik di sini</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Judul Utama -->
+  <h3 class="judul mt-5">STUDI KETERDAPATAN URANIUM DAN THORIUM MENGGUNAKAN SURVEI RADIOSPEKTROMETRY DI PULAU BELITUNG</h3>
+  <a href="sumber website.html" class="mylink">Sumber Website</a>
+  <!-- Konten 3 Kolom Atas -->
+  <div class="container text-center mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="col-box">
+          <h4>Bab 1 - Pendahuluan</h4>
+          <img src="batu 1.jpg" alt="Uranium Bab 1">
+          <button class="btn-uranium mt-3" onclick="toggleText('bab1text')">Lihat Isi</button>
+          <div id="bab1text" class="long-text">
+            <p>
+              Peningkatan populasi penduduk dan kemajuan ekonomi di dunia. akan mempengaruhi peningkatan kebutuhan energi khususnya kebutuhan listrik. Pertambahan. kebutuhan energi listrik dunia yaitu pada tahun 2010 sebesar 21300 TWH serta diproyeksikan sampai tahun 2030 antara 30390 dan 35470 TWH, serta sampai tahun 2050 antara 37660 dan 46190 TWH[1]. 
+              Energi nuklir melalui penerapan Pembangkit Listrik. Tenaga Nuklir (PLTN) merupakan solusi yang sulit dihindari dalam rangka memenuhi kekurangan energi listrik di masa yang akan datang. Di Indonesia dalam rangka mendukung berdirinya PLTN, upaya eksplorasi uranium (U) dan thorium (Th) sebagai bahan bakar nuklir terus-menerus dilakukan sampai menghasilkan sumberdaya terkategoriDaerah Belitung merupakan bagian wilayah Indonesia yang dilalui oleh Jalur Timah Asia Tenggara yang merupakan granit berumur Trias Jura dan dikenal sebagai batuan sumber timah dan berpotensi mengandung U dan Th. Terdapat beberapa mineral radioaktif yang merupakan produk ikutan dari timah, salah satunya adalah monasit. Monasit. dengan nimus kimia (Ce, La, Y., Th)PD, merupakan senyawa fosfat logam tanah jarang yang mengandung 50-70% oksida logam tanah jarang (LTJ) Cebakan Monasit di Bangka-Belitung adalah cebakan placer berupa endapan sungai (darat) dan lepas pantai yang berasal dari rombakan batuan granit berumur Trias Jura yang berkomposisi kuarsa, ortoklas, plagioklas, biotit, muskovit, mineral opak, zirkon, monasi hombienda dan mineral opak. Keterdapatan mineral berat di sebagian Wilayah Belitung menunjukkan bahwa mineral monasit berkisar antara 0,269 14,056 % dengan radioaktivitas mineral berat 250-1.000 cis dan kadar Th berkisar antara 100-6.545 ppm dan kadar U 15-639,4 ppm. Tujuan penelitian ini adalah menentukan daerah anomali radiometri yang terdiri dari laju dosis, kadar ekivalen uranium dan thorium, Cakupan daerah penelitian adalah hampir seluruh daerah Belitung (Gambar 1). 
+              Lokasi penelilian secara geografis terletak diantara koordinat Lintang dan Bujur yaitu 2" 30' LS (S), 107° 0' BT (E) dan 3° 20° LS (S), 108 30 BT (E). Secara administratif daerah penelitian terdiri dari dua kabupaten yaitu Belitung dan Belitung Timur.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="col-box">
+          <h4>Bab 2 - Tinjauan Pustaka</h4>
+          <img src="batu 2.jpg" alt="Uranium Bab 2">
+          <button class="btn-uranium mt-3" onclick="toggleText('bab2text')">Lihat Isi</button>
+          <div id="bab2text" class="long-text">
+            <p>
+              Radiasi gamma adalah pancaran gelombang elektromagnetik dari inti atom yang mengalami eksitasi selama proses peluruhan nuklir yang merepresentasikan terdapatnya kelebihan energi. Unsur radioaktif alam memancarkan tiga jenis sinar radiasi yaitu a, B. y. Masing-masing sinar radiasi tersebut menghasilkan tiga pengaruh dengan derajat pengaruh yang berbeda-beda yaitu: (1) Pengaruh emulsi fotografik seperti halnya pada sinar X dan cahaya tampak. (2) Menghasilkan ionisasi gas yang menyebabkan bisa menjadi penghantar listrik (3) Menghasilkan scintilation dan phosphorescene pada mineral-mineral tertentu. 
+              Interaksi ketiga radiasi alam tersebut dengan materi adalah scattering, collision dan absorbtion. Kemampuan daya tembus ketiga sinar radiasi tersebut berbeda-beda yaitu sinar alpha tidak mampu tembus dengan selembar kertas, sinar beta tidak mampu tembus dengan alumunium dengan ketebalan beberapa milimetrik, sedangkan sinar gamma dengan timbal dengan ketebalan beberapa sentimetrik. Di dalam formasi batuan hanya sinar gamma yang mampu tembus sekitar 0.5-1 m. Aplikasi spektrometer sinar gamma yang menyiapkan pengukuran langsung distribusi radioelemen alam (K, eU, eTh) di permukaan, merupakan metoda yang cepat, murah dan efektif untuk pemetaan geologi. 
+              Radiasi gamma yang diterima oleh detector merupakan kontribusi dari soll batuan, atmosfer, radiasi kosmik. Metode pengukuran dapat dilakukan secara mobile maupun insitu Pengukuran secara mobile dilakukan untuk keperluan area penelitian yang sangat luas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="col-box">
+          <h4>Bab 3 - Pembahasan</h4>
+          <img src="batu 3.jpg" alt="Uranium Bab 3">
+          <button class="btn-uranium mt-3" onclick="toggleText('bab3text')">Lihat Isi</button>
+          <div id="bab3text" class="long-text">
+            <p>
+              Metodologi penelitian yang dilakukan terdiri dari pengambilan data lapangan, analisa laboratorium dan pengolahan data hasil penelitian. Pengambilan data di lapangan meliputi survei radiometri dan pengambilan sampel mineral berat. Survei radiometri dilakukan dengan menggunakan alat ukur spektrometer sinar gamma RS-125. Pengambilan data lapangan menggunakan peta dasar yaitu peta geologi regional dan peta jalan yang mencakup hampir seluruh wilayah Pulau Belitung. Kecepatan pergerakan mobil ataupun motor sebisa mungkin konstan sekitar 30-40 km/jam. Untuk pengukuran insitu pada umumnya dilakukan apabila terdapat singkapan batuan serta endapan aluvial baik yang natural, daerah tambang ataupun bekas tambang timah.
+Data laboratorium adalah conto mineral berat yang diambil dari lapangan dengan melakukan pendulangan terhadap pasir aluvial. Preparasi conto mineral berat dilakukan. terlebih dahulu agar kualitas sampel laboratorium lebih meningkat. Selanjutnya data laboratorium yang sudah siap dilakukan analisa XRF yang akan menghasilkan kadar unsur-unsur dalam tiap conto dimana pada penelitian ini berupa kadar uranium dan thorium.
+Pengolahan data mencakup pembuatan peta iso kadar K. U dan TH dari data survei radiometri, analisa data laboratorium dan pembuatan laporan. Seluruh data yang diambil dikompilasi untuk disusun dalam laporan.
+
+Geologi Regional:
+Morfologi Pulau Belitung terdiri dari dataran pantai, dataran lembah sungai, dataran bergelombang, rawa dan pegunungan. Pegunungan dominan tersebar di bagian tengah dan Barat Daya daerah penelitian. Daerah rawa-rawa umumnya dijumpai di daerah bekas. pertambangan timah baik tambang rakyat maupun tambang industri.
+Secara regional Daerah Belitung tersusun oleh Formasi Kelapa Kampit dan Formasi Tajam yang berumur Permo Karbon dan diterobos oleh granit berumur berumur Trias -Jura dan Adamelit berumur Jura, Berdasarkan komposisi kimia dan magma sumber, intrusi tersebut dapat dikatagorikan sebagai granit tipe I dan Adamelit yang mengandung mineral monasit, zirkon dan kasiterit berumur Trias Jura. Batuan tersebut terlipat dan terpatahkan. oleh sesar-sesar yang relatif sejajar serta saling berpotongan (Gambar 3).
+Formasi Kelapakampit berumur Permo-Karbon merupakan sedimen flysch yang terlipat lemah hingga sedang, terdiri atas batu pasir malih berselingan dengan batusabak, batulumpur, serpih, hatulanau tufan dan rijang. Batu pasir malih berwarna putih kelabu muda, kompak, berbutir halus kasar, menyudut tanggung-me mbundar. Tebal perlapisan 2-6 m, setempat dijumpai perlapisan bersusun, silang siur dan gelembur gelombang. Batusabak dan serpih berwarna hitam, menunjukkan perlapisan sejajar dan mengandung kasiterit dan galena. Tebal perlapisan 5-20 cm. Batu lumpur berwarna hitam, berlembar, tebal perlapisan 4-6 m. Batulanau tufan, kelabu muda, kompak, kompak, tebal perlapisan 1-4 m. 
+Rijang, kelabu muda kemerahan, terkesikkan, mengandung radiolaria, tebal periapisan 10-20 cm. Formasi terendapkan dalam lingkungan laut dengan ketebalan yang tersingkap lebih dari 500 m. Formasi Tajam diduga menjemari dengan Formasi Kelapakampit yang berumur Permo-Karbon terdiri dari batupasir, batupasir kuarsa, dan batulempung pasiran. Batupasir mempunyai warna coklat kekuningan, bentuk butir membulat membulat tanggung, ukuran pasir halus pasir sedang, matrik terdiri dari kuarsa, felspar, mineral mafik, kompak. Batulempung pasiran, warna coklat kekuningan, ukuran lempung pasir sedang, membulat, matrik kuarsa, mineral mafik. Batulempung pasiran terdapat sebagai sisipan pada batupasir dengan ketebalan 10-15 cm. Batupasir kuarsa, wama putih, ukuran pasir sedang, membulat, sortasi baik, matrik terdiri dari kuarsa, felspar dan mineral mafik, kompak. batupasir tersebut telah mengalami metamorfose dan terintrusi oleh granit terdapat urat urat kuarsa dengan ketebalan 25 cm hal ini menunjukkan adanya proses hidrotermal akibat terobosan granit. Formasi ini ditemukan setempat sebagian tertutup oleh endapan aluvial yang berumur Kwarter
+Granit Tanjungpandan tersingkap di Daerah Tanjungpandan, Sijuk dan sepanjang Pantai Utara Tanjung Tinggi. Granit warna abu-abu putih, holokristalin, hipidiomorfik, ukuran butir 14 mm, komposisi kuarsa 12-15%, plagioklas 1318%, k felspar 40-58%, homblende 4%, biotit 10-20%, monasit 2%, zirkon 1%, kasiterit 1-4 %, apatit 1%. Pada biotit terdapat inklusi monasit, zirkon, apatit yang memperlihatkan pleakroik halo. Granit tersebut telah mengalami pelapukan warna coklat kokuningan. Berdasarkan komposisi kimia Batuan Granit tersebut merupakan hasil dari proses hidrotermal atau pneumatolitic quarts injection dapat dikategorikan sebagai Granit tipe I yang mengandung mineral monasit, zirkon dan kasiterit. Hasil determinasi K Argon terhadap biotit dan hornblende diketahui bahwa kelompok Granit tersebut mempunyai umur sekitar Jura-Kapur Akhir
+Adamelit Baginda tersingkap di sepanjang Pantai Selatan, wama abu-abu putih, holokristalin, porpiritik, fenokris ukuran 17 mm, masa dasar 1 mm, komposisi kuarsa 18 %, K feldspar 31-38%, pagioklas 25 %, biotit 11%, hornblende 3-5% piroksen 3%, apatit 1%, monasit 2%, zircon 1%, mineral opak 1%. Pada biotit terdapat inklusi monasit, zirkon, apatit yang memperlihatkan pleokroik halo. Umur Adamelit Baginda tersebut adalah Trias Jura
+Granodiorit tersingkap di daerah Patok Besi Belitung Timur, wama abu-abu gelap, holokristalin, allotriomorfik, ukuran butir 0,4 -1 mm, komposisi mineral kuarsa 12%, K feldspar 10 %, plagioklas 28%, biotit 15%, epidot 21%, kalsit 2%, serisit 3%, apatit 1%, klorit 8% dan mineral opak 1%. Sebagian feldspar terubah menjadi epidot, kalsit, serisit dan biotit terubah menjadi klorit. Batuan granodiorit tersebut sebagian juga terdapat sebagai sebagai xenolit dalam adamelit dengan ukuran 5-10 cm. Menurut peneliti terdahulu batuan grano diorit berumur Trias Jura.
+
+Interpretasi Data Radiometri:
+Peta anomali laju dosis alam dan iso kadar thorium menunjukkan pola yang hampir mirip, dimana hal ini menunjukkan bahwa unsur thorium lebih dominan. Peta laju dosis alam menunjukkan variasi laju dosis sekitar 10450 nSv/jam. Daerah laju dosis relatif tinggi lebih dari 200 nSv/h terdapat di bagian wilayah Barat Laut dan Selatan Pulau Belitung yang kemungkinan berasosiasi dengan keberadaan intrusi Granit Tanjungpandan dan Adamolit Baginda sebagai batuan sumber mineral radioaktif. Pada pela iso kadar K Gambar 7) menunjukkan variasi harga sekitar 0.2-1.4%. Daerah kadar K relatif tinggi juga di dominasi di bagian wilayah Barat Laut dan Selatan Pulau Belitung serta beberapa wilayah di bagian Timur. Pola anomali kadar K adalah halo circular konsentrik arah N-S dan W-E memperlihatkan unsur radioaktif K terdapat cukup dominan mempengaruhi pola anomali laju dosis, dan hal ini kemungkinan besar adanya K-felspar yang umum banyak terdapat di dalam granit dan relatif sedikit di batuan basaltik dan andesit Area anomali kadar K tinggi dapat diinterpretasikkan sebagai zona alterasi dan potasium juga memungkinkan menjadi unsur pathfinder dalam melakukan eksplorasi daerah-daerah mineralisasi.
+Peta iso kadar U menunjukkan pola yang sedikit mirip dengan anomali laju dosis dengan rentang variasi sekitar 2-35 ppm eU. Daerah sebelah Barat Laut Pulau Belitung menunjukkan nillai kadar U yang relatif cukup rendah kurang dari 15 ppm eU dibandingkan daerah sebelah selatan, hal ini kemungkinan unsur U memang tidak dominan dalam menentukan anomali laju dosis. Kemungkinan akibat proses tektonik yang cukup intens dan sifat U yang cenderung mobile melalui struktur-struktur patahan yang berkembang menyebabkan dominasi unsur U menjadi berkurang.
+Daerah anomali laju dosis Selatan dan Barat Laut Pulau Belitung telah dilakukan pengambilan conto mineral berat masing-masing sebanyak 5 sampel yang dihitung kadar U dan TH dengan menggunakan analisa XRF. Kurva variasi nilai kadar U dan TH menunjukkan bahwa nilai kadar thorium memliki tingkat variasi lebih tinggi dibanding nilai kadar U dan hal ini memperlihatkan dominasi unsur TH yang mempengaruhi nilai laju dosis. Dengan mengabaikan bahwa sampel ke-5 masing-masing zona anomali maka dapat dihitung kadar rata-rata mineral berat yang mewakili daerah aluvial atau rombakan hasil pelapukan granit di dua daerah tersebut yaitu di Selatan 53.7 ppm U dan
+66.1 ppm Th, sedangkan di Barat Laut 21.38 ppm U dan 56.23 ppm Th.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 Kolom Bawah -->
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="col-box">
+          <h4>Bab 4 - Penutup</h4>
+          <img src="batu 4.jpg" alt="Uranium Bab 4">
+          <button class="btn-uranium mt-3" onclick="toggleText('bab4text')">Lihat Isi</button>
+          <div id="bab4text" class="long-text">
+            <p>
+              Anomali radiometri relatif tinggi di Pulau Belitung tersebar di bagian Barat Laut dan Selatan dengan rentang nilai sekitar 100-450 nSv/jam. Zona anomali di bagian Barat Laut kadar uranium sekitar 2-15 ppm elu dan kadar thorium sekitar 18-120 ppm eTH yang berasosiasi dengan keberadaan Granit Tanjungpandan. Zona anomali di bagian selatan kadar uranium sekitar 2-35 ppm eU dan kadar thorium sekitar 18-120 ppm eTh yang berasosiasi dengan keberadaan Adamelit Baginda. Hasil dari uji laboratorium mineral berat. menunjukkan bahwa zona anomali Barat Laut harga kadar U rata-rata 23.38 ppm. dan TH 56.23 ppm, sedangkan zona anomali selatan harga kadar U rata-rata 53.7 ppm, dan TH 66.1 ppm. Hal ini menunjukkan bahwa unsur TH lebih dominan terhadap anomali laju dosis yang ditunjukkan oleh pola anomali kadar TH yang memiliki kemiripan dengan laju dosis dibandingkan dengan pola anomali kadar U. Tingkat dominasi U di zona Barat Laut yang rendah kemungkinan diakibatkan oleh aktivitas tektonik yang relatif intens memunculkan pola-pola struktur yang mempengaruhi mobilitas uranium dan rombakan aluvial yang lebih tebal.
+
+UCAPAN TERIMA KASIH
+Terima kasih disampaikan kepada Bpk Kepala Kepala Pusat Teknologi Bahan Galian Nuklir (PTBGN) BATAN atas pendanaan pelaksanaan kegiatan dan KPTF yang telah memberi arahan untuk sempurnanya tulisan ini.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="col-box">
+          <h4>DAFTAR PUSTAKA</h4>
+          <img src="uranium 1.jpg" alt="DAFTAR PUSTAKA">
+          <button class="btn-uranium mt-3" onclick="toggleText('bab5text')">Lihat Isi</button>
+          <div id="bab5text" class="long-text">
+            <p>
+              1. Anonymous, International Status and Prospects for Nuclear Power 2012, Laporan oleh Direktur Jenderal IAEA (2012).
+
+2. L.P. Rodriguez, D. Milian, C.R. Garcia, D.E. Milan, C.A. Brayner and M. Cadavid, "Feasibility of Thorium Fuel Cycles in a Very High Temperature Pebble-Bed Hybrid System", Atom Indonesia, 2015.
+
+3. Katili J. A., Tektonik Frame Work, Resources and Related Problem in Southeast Asia departement of Mine and Energy, Jakarta Indonesia, 1977.
+
+Subtanto Joko Suprapto, "Tinjauan Tentang Unsur Tanah Jarang", Buletin Sumber Daya Geologi, Volume IV. Nomor 1, 2009
+
+5. Soeprapto Tjokrokardono, Bambang Soetopo, Ngadenin, "Tinjauan Sumber Daya Monasit Di Indonesia Sebagai Pendukung Litbang/ Industri Superkonduktor, Proceding ISBN 979, P2BGN-BATAN, Jakarta, 2002.
+
+6. Bambang Soetopo, Lilik Subiantara, Ngadenin, Nunik Madyaningrum, "Studi Prospek Monasit di Daerah Tumbang Rusa Tanjung Pandan Belitung Propinsi Bangka Belitung", Buletin Pusat Pengembangan Geologi Nuklir BATAN, Volume XXXIII, Nomor 1, 2012. 7. Bambang Soetopo, Lilik Subiantara, Priyo Sularto, Dwi Haryanto, "Studi Deposit Monasit
+
+dan Zircon Dalam Batuan Kuarter Di Daerah Cerucuk Belitung, Buletin Pusat Pengembangan Geologi Nuklir BATAN, Volume XXXII, Nomor 155, Mei 2011. 8
+
+. TELFORD, W.M., GELDART, L. P., SHERRIF, R.E., and KEYS. D. A., Applied Geophysics (2nd ed.), Cambridge University Press, Cambridge. London, New York, Melbourne, 1990.
+
+9. Maden N and Akaryali E, "Gamma ray spectrometry for recognition of hydrothermal alteration zones related to low sulfidation epithermal gold mineralization (eastern Pontides, NE Türkiye)", Journal of Applied Geophysics, 2015.
+
+10. Beamish D., "Relationships between gamma-ray attenuation and soils in SW England", Geoderma, 2015.
+
+11. IAEA-TECDOC-1363, "Guidelines for radioelement mapping using gamma ray spectrometry data", International Atomic Energy Agency, 2003. 12.
+
+Andryanto Putra, "Geolog "Geologi Dan eksplorasi Mineral Radioaktif Formasi Skarn Dan Stipnomelane Biotit chlorite Belitung Timur Indonesia". Laporan Geologi Minerals Exploration of Uranium-Monasite, 2010.
+
+13. Baharuddin dan Sidarto, "Peta Geologi Lembar Belitung Sumatra Skala 1: 250.000", Pusat Penelitian Pengembangan Geologi, Bandung, 1995.
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+<footer>
+Copyright © 2025. All rights reserved. <i><u>BY Calon Mahasiswa Abadi.</u></i>
+</footer>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleText(id) {
+      const el = document.getElementById(id);
+      el.style.display = (el.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+</html>

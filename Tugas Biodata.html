@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Purbaya Yudhi Sadewa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background:burlywood;
+      color: white;
+    }
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .accordion {
+      width: 90%;
+      max-width: 600px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+    }
+    .accordion-header {
+      padding: 15px;
+      cursor: pointer;
+      background: #f1f1f1;
+      transition: background 0.3s;
+    }
+    .accordion-header:hover {
+      background: #e0e0e0;
+    }
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-out, padding 0.3s;
+      padding: 0 15px;
+    }
+    .accordion-content.open {
+      padding: 15px;
+      max-height: 500px; /* cukup besar agar konten muat */
+    }
+    a {
+      color: #003366;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="purbaya.jpg" alt="Foto Purbaya Yudhi Sadewa">
+    <h1>Biodata Purbaya Yudhi Sadewa</h1>
+   <p><a href="https://id.wikipedia.org/wiki/Purbaya_Yudhi_Sadewa" target="_blank">Sumber Wikipedia</a></p>
+   </header>
+
+  <div class="accordion">
+    <!-- Pendidikan -->
+    <div class="accordion-item">
+      <div class="accordion-header">Pendidikan</div>
+      <div class="accordion-content">
+        <p>Ia meraih gelar Sarjana dari Jurusan Teknik Elektro, <b>Institut Teknologi Bandung (ITB)</b>. Sementara gelar Master of Science (MSc) dan gelar Doktor di bidang Ilmu Ekonomi diperoleh dari <b>Universitas Purdue</b>, Indiana, Amerika Serikat</p>
+      </div>
+    </div>
+
+    <!-- Pengalaman -->
+    <div class="accordion-item">
+      <div class="accordion-header">Pengalaman</div>
+      <div class="accordion-content">
+        <p> Sebelum terjun di pemerintahan, ia memulai karier sebagai Field Engineer di Schlumberger Overseas SA (1989–1994). Kemudian pada Oktober 2000 hingga Juli 2005 ia ditunjuk sebagai Senior Economist di <b>Danareksa Research Institute</b>. Selanjutnya, ia menjadi Direktur Utama PT <b>Danareksa Securities </b>dari April 2006 Oktober 2008. Ia juga menjadi Chief Economist Danareksa Research Institute Juli 2005 – Maret 2013, dan sebagai Anggota Dewan Direksi <b>PT Danareksa (Persero)</b> dari Maret 2013 hingga April 2015.</p>
+      </div>
+    </div>
+
+    <!-- Kehidupan Pribadi -->
+    <div class="accordion-item">
+      <div class="accordion-header">Kehidupan Pribadi</div>
+      <div class="accordion-content">
+        <p>Purbaya Yudhi Sadewa menikah dengan Ida Yulidina, yang merupakan pemenang ajang <b>Wajah Femina</b> pada tahun 1989. Dari pernikahan ini, mereka dikaruniai dua orang putra, yaitu Yuda Purboyo Sunu dan Yudo Achilles Sadewa. Putranya, Yudo Achilles Sadewa, dikenal sebagai seorang trader dan kreator konten. Purbaya sendiri pernah menyebut Yudo sebagai <b>"si bocah trader"</b> dalam sebuah unggahan media sosial pada tahun 2023.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Accordion toggle
+    const headers = document.querySelectorAll(".accordion-header");
+    headers.forEach(header => {
+      header.addEventListener("click", () => {
+        const content = header.nextElementSibling;
+        content.classList.toggle("open");
+      });
+    });
+  </script>
+
+</body>
+</html>
